@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>SAGE Expenses Submission Form</title>
+        <h1>SAGE Expenses Submission Form</h1>
+        <link rel="stylesheet" type="type/css" href="‪C:\Users\Vita\Desktop\emoji\sageform.css">
+    </head>
+    <body style="background-color:lightgoldenrodyellow">
+        <p><img src="C:\Users\Vita\Desktop\emoji\sage_mark_photo.png" alt="sage mark" align="top" />
+            <hr style="height:2px;border-width:0;color:green;background-color:green">
+        <h3>General Information</h3>
+        <!--Name-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+            <lable><p><b>Name:  </b> <br/>i.e. Vita.Yeh</p>   
+            <input type="text" name="name" /></label>
+        </form>
+        <hr/>
+        <!--Location-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post"> 
+            <p><b>Location: </b>Place whare expenses happended.
+                <br/>
+                <input type='radio' name="place" value="Hong Kong"
+                checked="checked" /> Hong Kong<br/>
+                <input type="radio" name="place" value="Taiwan" />Taiwan<br/>
+                <input type="radio" name="place" value="Indonesia" />Indonesia<br/>
+                <input type="radio" name="place" value="others"/>Others:
+                <input type="text" name="place"/>
+            </p>
+        </form>
+        <hr/>
+        <!--Project Code-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+            <lable><p><b>Project Code:  </b><br/>
+                        Please enter reievant Project Code from your supervisor.</p>   
+                <input type="text" name="project code" /></label>
+        </form>
+        <hr/>
+        <!--Expense Type-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+            <p><b>Expense Type</b><br/>Select the most reievant description of your expenses.</p>
+            <select name='Type'>
+                <option value='Entertainment'>Entertainment</option>
+                <option value='Motor Car Expenses'>Motor Car Expenses</option>
+                <option value='Parking Fee'>Parking Fee</option>
+                <option value='Computer Expenses'>Computer Expenses</option>
+                <option value='Internet Expenses'>Internet Expenses</option>
+                <option value='Courier and Postage'>Courier and Postage</option>
+                <option value='Printing and Stationery'>Printing and Stationery</option>
+                <option value='Telecommunication'>Telecommunication</option>
+                <option value='Travelling-Local'>Travelling-Local</option>
+                <option value='Travelling-Overseas'>Travelling-Overseas</option>
+                <option value='Sundry Expenses'>Sundry Expenses</option>
+            </select>
+        </form>
+        <br />
+        <br />
+        <form action="C:\Users\Vita\Desktop\emoji\sageform4.html">
+            <div>
+            <!--<input type="submit" name="continue" value="Continue"/>-->
+            <button><img src="C:\Users\Vita\Desktop\emoji\next.png"
+                    alt="add" width="58" height="30"/>Next</button>
+            <input type="hidden" name="bookmark" value="lyrics"/>
+            </div>
+        </form>
+        <form action="C:\Users\Vita\Desktop\emoji\sageform2.html">
+            <div>
+                <button>
+                    <img src="C:\Users\Vita\Desktop\emoji\back.png"
+                    alt="add" width="58" height="30"/>Back</button>
+                <input type="hidden" name="bookmark" value="lyrics"/>
+            </div>
+        </form>
+    </body>
+</html>

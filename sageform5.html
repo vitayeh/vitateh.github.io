@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <head>
+        <title>SAGE Expenses Submission Form</title>
+        <h1>SAGE Expenses Submission Form</h1>
+        <link rel="stylesheet" type="type/css" href="‪C:\Users\Vita\Desktop\emoji\sageform.css">
+    </head>
+    <body style="background-color:lightgoldenrodyellow">
+        <p><img src="C:\Users\Vita\Desktop\emoji\sage_mark_photo.png" alt="sage mark" align="top" />
+            <hr style="height:2px;border-width:0;color:green;background-color:green">
+        <h3>Cancellation of Claim (Optional)</h3>
+        <ul>
+            <li>Please upload soft copy of your receipt. Receipt is required to be relevant to current item only.</li>
+            <li>The words and numbers of all uploaded files need to be clear and recognizable.</li>
+            <li> If files cannot be uploaded successfully, please send them to <a href='mailto:winnie.chan@sagetech.com.hk'>Winnie.Chan</a> instead.</li>
+        </ul></p>
+        <h3>Expense Detail -01</h3>
+        <!--Date of Expense -01-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+            <p><b>Date of Expense -01</b><br/>
+                The expense date is the day of expense incurred, i.e. the date printed on the receipt.</p>
+            <input type="date" min="2019" id="datefield" />
+            <script>
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; //January is 0!
+            var yyyy = today.getFullYear();
+            if(dd<10){
+                    dd='0'+dd
+                } 
+                if(mm<10){
+                    mm='0'+mm
+                } 
+
+            today = yyyy+'-'+mm+'-'+dd;
+            document.getElementById("datefield").setAttribute("max", today);</script>
+        </form>
+        <hr/>
+        <!--Description -01-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+            <lable><p><b>Description -01  </b>
+                Please describe details of the expense.</p>   
+                <input required type="text" name="description" /></label>
+        </form>
+        <hr/>
+        <!--Currency -01-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+            <p><b>Currency -01</b><br/>
+                Please choose the original currency of your expense.</p>
+            <select name='Type'>
+                <option value='HKD'>Entertainment</option>
+                <option value='TWD'>Motor Car Expenses</option>
+                <option value='USD'>Parking Fee</option>
+                <option value='CAD'>Computer Expenses</option>
+                <option value='AUD'>Internet Expenses</option>
+                <option value='NZD'>Courier and Postage</option>
+                <option value='CNY'>Printing and Stationery</option>
+                <option value='MOP'>Telecommunication</option>
+                <option value='JPY'>Travelling-Local</option>
+                <option value='KRW'>Travelling-Overseas</option>
+                <option value='SGD'>Sundry Expenses</option>
+                <option value='MYR'>Computer Expenses</option>
+                <option value='IDR'>Internet Expenses</option>
+                <option value='THB'>Courier and Postage</option>
+                <option value='VND'>Printing and Stationery</option>
+                <option value='EUR'>Telecommunication</option>
+                <option value='GBP'>Travelling-Local</option>
+                <option value='ZAR'>Travelling-Overseas</option>
+            </select>
+        </form>
+        <!--Expense Amount -01-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+        <lable><p><b>Expense Amount -01  </b>
+            Please enter the amount of expense in your original currency.</p>   
+            <input type="digtal" name="Expense Amount" /></label>
+        <hr/>
+        </form>
+        <!--Upload Receipts -01-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+            <lable><p><b>Upload Receipts -01</b>
+                    File type: Image. Only acceptable for both .jpg and .png</p>   
+                <input type="file" name="Upload Receipts" /><br />
+            </label>
+        </form>
+
+
+        <br />
+        <br />
+        <form action="C:\Users\Vita\Desktop\emoji\sageform6.html">
+            <div>
+            <!--<input type="submit" name="continue" value="Continue"/>-->
+            <button><img src="C:\Users\Vita\Desktop\emoji\next.png"
+                    alt="add" width="58" height="30"/>Next</button>
+            <input type="hidden" name="bookmark" value="lyrics"/>
+            </div>
+        </form>
+        <form action="C:\Users\Vita\Desktop\emoji\sageform4.html">
+            <div>
+                <button>
+                    <img src="C:\Users\Vita\Desktop\emoji\back.png"
+                    alt="add" width="58" height="30"/>Back</button>
+                <input type="hidden" name="bookmark" value="lyrics"/>
+            </div>
+        </form>
+    </body>
+</html>

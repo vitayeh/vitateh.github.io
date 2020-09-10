@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <title>SAGE Expenses Submission Form</title>
+        <h1>SAGE Expenses Submission Form</h1>
+        <link rel="stylesheet" type="type/css" href="‪C:\Users\Vita\Desktop\emoji\sageform.css">
+    </head>
+    <body style="background-color:lightgoldenrodyellow">
+        <p><img src="C:\Users\Vita\Desktop\emoji\sage_mark_photo.png" alt="sage mark" align="top" />
+            <hr style="height:2px;border-width:0;color:green;background-color:green">
+        <h3>Exchange Rate -01</h3>
+        <ul>
+            <li>Please provide evidence of your chosen exchange rate. If not then the system will use online exchange rate instead.</li>
+            <li>Source of <a href="https://exchangerate.host/#/" target="_blank">online exchange rate</a>.</li>
+        </ul></p>
+        <h3>Expense Rate -01</h3>
+        <!--Expense Amount in HKD -01-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method="post">
+            <label>
+            <p><b>Expense Amount in HKD -01</b>
+            Please convert the expense amount to HKD.</p>   
+            <input required type="text" name="description" />
+            </label>
+        </form>
+        <hr/>
+        
+        <!--Enidence of Exchange Rate -01-->
+        <form action="‪C:\Users\Vita\Desktop\emoji\phpexcel.php" method='post'>
+            <lable><p><b>Evidence of Exchange Rate-01</b>
+                File type: Image. Acceptable for both .jpg and .png</p>   
+                <input type="file" name="Upload Evidence" /><br />
+            </label>
+        </form>
+        <br />
+        <br />
+        <form action="C:\Users\Vita\Desktop\emoji\sageform7.html">
+            <div>
+            <!--<input type="submit" name="continue" value="Continue"/>-->
+            <button><img src="C:\Users\Vita\Desktop\emoji\next.png"
+                    alt="add" width="58" height="30"/>Next</button>
+            <input type="hidden" name="bookmark" value="lyrics"/>
+            </div>
+        </form>
+        <form action="C:\Users\Vita\Desktop\emoji\sageform5.html">
+            <div>
+                <button>
+                    <img src="C:\Users\Vita\Desktop\emoji\back.png"
+                    alt="add" width="58" height="30"/>Back</button>
+                <input type="hidden" name="bookmark" value="lyrics"/>
+            </div>
+        </form>
+    </body>
+</html>
